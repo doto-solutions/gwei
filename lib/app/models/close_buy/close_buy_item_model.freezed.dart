@@ -8,6 +8,9 @@ part of 'close_buy_item_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+CloseBuyItemModel _$CloseBuyItemModelFromJson(Map<String, dynamic> json) {
+  return _CloseBuyItemModel.fromJson(json);
+}
 
 /// @nodoc
 class _$CloseBuyItemModelTearOff {
@@ -15,10 +18,10 @@ class _$CloseBuyItemModelTearOff {
 
 // ignore: unused_element
   _CloseBuyItemModel call(
-      {@required List<CloseBuyModel> closeBuyModel,
+      {List<CloseBuyModel> closeBuyModel,
       double amount,
       String exchangeCurrency,
-      int closeBuyTotal,
+      int buyTotal,
       String name,
       String avatarUrl,
       String buyVia,
@@ -27,12 +30,17 @@ class _$CloseBuyItemModelTearOff {
       closeBuyModel: closeBuyModel,
       amount: amount,
       exchangeCurrency: exchangeCurrency,
-      closeBuyTotal: closeBuyTotal,
+      buyTotal: buyTotal,
       name: name,
       avatarUrl: avatarUrl,
       buyVia: buyVia,
       currency: currency,
     );
+  }
+
+// ignore: unused_element
+  CloseBuyItemModel fromJson(Map<String, Object> json) {
+    return CloseBuyItemModel.fromJson(json);
   }
 }
 
@@ -45,12 +53,13 @@ mixin _$CloseBuyItemModel {
   List<CloseBuyModel> get closeBuyModel;
   double get amount;
   String get exchangeCurrency;
-  int get closeBuyTotal;
+  int get buyTotal;
   String get name;
   String get avatarUrl;
   String get buyVia;
   String get currency;
 
+  Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $CloseBuyItemModelCopyWith<CloseBuyItemModel> get copyWith;
 }
@@ -64,7 +73,7 @@ abstract class $CloseBuyItemModelCopyWith<$Res> {
       {List<CloseBuyModel> closeBuyModel,
       double amount,
       String exchangeCurrency,
-      int closeBuyTotal,
+      int buyTotal,
       String name,
       String avatarUrl,
       String buyVia,
@@ -85,7 +94,7 @@ class _$CloseBuyItemModelCopyWithImpl<$Res>
     Object closeBuyModel = freezed,
     Object amount = freezed,
     Object exchangeCurrency = freezed,
-    Object closeBuyTotal = freezed,
+    Object buyTotal = freezed,
     Object name = freezed,
     Object avatarUrl = freezed,
     Object buyVia = freezed,
@@ -99,9 +108,7 @@ class _$CloseBuyItemModelCopyWithImpl<$Res>
       exchangeCurrency: exchangeCurrency == freezed
           ? _value.exchangeCurrency
           : exchangeCurrency as String,
-      closeBuyTotal: closeBuyTotal == freezed
-          ? _value.closeBuyTotal
-          : closeBuyTotal as int,
+      buyTotal: buyTotal == freezed ? _value.buyTotal : buyTotal as int,
       name: name == freezed ? _value.name : name as String,
       avatarUrl: avatarUrl == freezed ? _value.avatarUrl : avatarUrl as String,
       buyVia: buyVia == freezed ? _value.buyVia : buyVia as String,
@@ -121,7 +128,7 @@ abstract class _$CloseBuyItemModelCopyWith<$Res>
       {List<CloseBuyModel> closeBuyModel,
       double amount,
       String exchangeCurrency,
-      int closeBuyTotal,
+      int buyTotal,
       String name,
       String avatarUrl,
       String buyVia,
@@ -144,7 +151,7 @@ class __$CloseBuyItemModelCopyWithImpl<$Res>
     Object closeBuyModel = freezed,
     Object amount = freezed,
     Object exchangeCurrency = freezed,
-    Object closeBuyTotal = freezed,
+    Object buyTotal = freezed,
     Object name = freezed,
     Object avatarUrl = freezed,
     Object buyVia = freezed,
@@ -158,9 +165,7 @@ class __$CloseBuyItemModelCopyWithImpl<$Res>
       exchangeCurrency: exchangeCurrency == freezed
           ? _value.exchangeCurrency
           : exchangeCurrency as String,
-      closeBuyTotal: closeBuyTotal == freezed
-          ? _value.closeBuyTotal
-          : closeBuyTotal as int,
+      buyTotal: buyTotal == freezed ? _value.buyTotal : buyTotal as int,
       name: name == freezed ? _value.name : name as String,
       avatarUrl: avatarUrl == freezed ? _value.avatarUrl : avatarUrl as String,
       buyVia: buyVia == freezed ? _value.buyVia : buyVia as String,
@@ -169,18 +174,22 @@ class __$CloseBuyItemModelCopyWithImpl<$Res>
   }
 }
 
+@JsonSerializable()
+
 /// @nodoc
 class _$_CloseBuyItemModel implements _CloseBuyItemModel {
   const _$_CloseBuyItemModel(
-      {@required this.closeBuyModel,
+      {this.closeBuyModel,
       this.amount,
       this.exchangeCurrency,
-      this.closeBuyTotal,
+      this.buyTotal,
       this.name,
       this.avatarUrl,
       this.buyVia,
-      this.currency})
-      : assert(closeBuyModel != null);
+      this.currency});
+
+  factory _$_CloseBuyItemModel.fromJson(Map<String, dynamic> json) =>
+      _$_$_CloseBuyItemModelFromJson(json);
 
   @override
   final List<CloseBuyModel> closeBuyModel;
@@ -189,7 +198,7 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
   @override
   final String exchangeCurrency;
   @override
-  final int closeBuyTotal;
+  final int buyTotal;
   @override
   final String name;
   @override
@@ -201,7 +210,7 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
 
   @override
   String toString() {
-    return 'CloseBuyItemModel(closeBuyModel: $closeBuyModel, amount: $amount, exchangeCurrency: $exchangeCurrency, closeBuyTotal: $closeBuyTotal, name: $name, avatarUrl: $avatarUrl, buyVia: $buyVia, currency: $currency)';
+    return 'CloseBuyItemModel(closeBuyModel: $closeBuyModel, amount: $amount, exchangeCurrency: $exchangeCurrency, buyTotal: $buyTotal, name: $name, avatarUrl: $avatarUrl, buyVia: $buyVia, currency: $currency)';
   }
 
   @override
@@ -216,9 +225,9 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
             (identical(other.exchangeCurrency, exchangeCurrency) ||
                 const DeepCollectionEquality()
                     .equals(other.exchangeCurrency, exchangeCurrency)) &&
-            (identical(other.closeBuyTotal, closeBuyTotal) ||
+            (identical(other.buyTotal, buyTotal) ||
                 const DeepCollectionEquality()
-                    .equals(other.closeBuyTotal, closeBuyTotal)) &&
+                    .equals(other.buyTotal, buyTotal)) &&
             (identical(other.name, name) ||
                 const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -237,7 +246,7 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
       const DeepCollectionEquality().hash(closeBuyModel) ^
       const DeepCollectionEquality().hash(amount) ^
       const DeepCollectionEquality().hash(exchangeCurrency) ^
-      const DeepCollectionEquality().hash(closeBuyTotal) ^
+      const DeepCollectionEquality().hash(buyTotal) ^
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(avatarUrl) ^
       const DeepCollectionEquality().hash(buyVia) ^
@@ -247,18 +256,26 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
   @override
   _$CloseBuyItemModelCopyWith<_CloseBuyItemModel> get copyWith =>
       __$CloseBuyItemModelCopyWithImpl<_CloseBuyItemModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$_$_CloseBuyItemModelToJson(this);
+  }
 }
 
 abstract class _CloseBuyItemModel implements CloseBuyItemModel {
   const factory _CloseBuyItemModel(
-      {@required List<CloseBuyModel> closeBuyModel,
+      {List<CloseBuyModel> closeBuyModel,
       double amount,
       String exchangeCurrency,
-      int closeBuyTotal,
+      int buyTotal,
       String name,
       String avatarUrl,
       String buyVia,
       String currency}) = _$_CloseBuyItemModel;
+
+  factory _CloseBuyItemModel.fromJson(Map<String, dynamic> json) =
+      _$_CloseBuyItemModel.fromJson;
 
   @override
   List<CloseBuyModel> get closeBuyModel;
@@ -267,7 +284,7 @@ abstract class _CloseBuyItemModel implements CloseBuyItemModel {
   @override
   String get exchangeCurrency;
   @override
-  int get closeBuyTotal;
+  int get buyTotal;
   @override
   String get name;
   @override

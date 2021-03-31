@@ -8,6 +8,9 @@ part of 'close_buy_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+CloseBuyModel _$CloseBuyModelFromJson(Map<String, dynamic> json) {
+  return _CloseBuyModel.fromJson(json);
+}
 
 /// @nodoc
 class _$CloseBuyModelTearOff {
@@ -28,6 +31,11 @@ class _$CloseBuyModelTearOff {
       buyVia: buyVia,
     );
   }
+
+// ignore: unused_element
+  CloseBuyModel fromJson(Map<String, Object> json) {
+    return CloseBuyModel.fromJson(json);
+  }
 }
 
 /// @nodoc
@@ -42,6 +50,7 @@ mixin _$CloseBuyModel {
   String get onWhich;
   String get buyVia;
 
+  Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $CloseBuyModelCopyWith<CloseBuyModel> get copyWith;
 }
@@ -130,10 +139,15 @@ class __$CloseBuyModelCopyWithImpl<$Res>
   }
 }
 
+@JsonSerializable()
+
 /// @nodoc
 class _$_CloseBuyModel implements _CloseBuyModel {
   const _$_CloseBuyModel(
       {this.canBuy, this.amount, this.currency, this.onWhich, this.buyVia});
+
+  factory _$_CloseBuyModel.fromJson(Map<String, dynamic> json) =>
+      _$_$_CloseBuyModelFromJson(json);
 
   @override
   final bool canBuy;
@@ -182,6 +196,11 @@ class _$_CloseBuyModel implements _CloseBuyModel {
   @override
   _$CloseBuyModelCopyWith<_CloseBuyModel> get copyWith =>
       __$CloseBuyModelCopyWithImpl<_CloseBuyModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$_$_CloseBuyModelToJson(this);
+  }
 }
 
 abstract class _CloseBuyModel implements CloseBuyModel {
@@ -191,6 +210,9 @@ abstract class _CloseBuyModel implements CloseBuyModel {
       String currency,
       String onWhich,
       String buyVia}) = _$_CloseBuyModel;
+
+  factory _CloseBuyModel.fromJson(Map<String, dynamic> json) =
+      _$_CloseBuyModel.fromJson;
 
   @override
   bool get canBuy;
