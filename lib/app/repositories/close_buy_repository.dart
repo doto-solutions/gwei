@@ -9,7 +9,6 @@ import 'package:gwei/app/models/index.dart';
 
 class CloseBuyRepository implements EntityRepository {
   FirebaseFirestore firestore = Get.find<FirebaseFirestore>();
-  // CloseBuyRepository() {}
   @override
   Future<Either<EntityFailure, CloseBuyModel>> getItem(
       {EntityParamsModel cursor}) {
@@ -24,13 +23,13 @@ class CloseBuyRepository implements EntityRepository {
         // .limit(cursor.offset ?? 10)
         ;
 
-    var er = await query.get();
-    var ers = er.docs
+    var collection = await query.get();
+    var items = collection.docs
         .map((q) =>
             q.data() != null ? CloseBuyItemModel.fromJson(q.data()) : null)
         // .where((i) => i != null)
         .toList();
-    return right(ers);
+    return right(items);
   }
 
   Map<String, dynamic> resolveSnapshot(QueryDocumentSnapshot doc) {
