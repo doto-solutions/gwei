@@ -1,17 +1,16 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'close_buy_item_model.dart';
+part of 'offer_item_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CloseBuyItemModel _$_$_CloseBuyItemModelFromJson(Map<String, dynamic> json) {
-  return _$_CloseBuyItemModel(
-    closeBuyModel: (json['closeBuyModel'] as List)
-        ?.map((e) => e == null
-            ? null
-            : CloseBuyModel.fromJson(e as Map<String, dynamic>))
+_$_OfferItemModel _$_$_OfferItemModelFromJson(Map<String, dynamic> json) {
+  return _$_OfferItemModel(
+    offerModel: (json['offerModel'] as List)
+        ?.map((e) =>
+            e == null ? null : OfferModel.fromJson(e as Map<String, dynamic>))
         ?.toList(),
     amount: (json['amount'] as num)?.toDouble(),
     exchangeCurrency: json['exchangeCurrency'] as String,
@@ -23,11 +22,9 @@ _$_CloseBuyItemModel _$_$_CloseBuyItemModelFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_CloseBuyItemModelToJson(
-        _$_CloseBuyItemModel instance) =>
+Map<String, dynamic> _$_$_OfferItemModelToJson(_$_OfferItemModel instance) =>
     <String, dynamic>{
-      'closeBuyModel':
-          instance.closeBuyModel?.map((e) => e?.toJson())?.toList(),
+      'offerModel': instance.offerModel?.map((e) => e?.toJson())?.toList(),
       'amount': instance.amount,
       'exchangeCurrency': instance.exchangeCurrency,
       'buyTotal': instance.buyTotal,

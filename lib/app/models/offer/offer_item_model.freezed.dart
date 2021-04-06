@@ -1,24 +1,24 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
-part of 'close_buy_item_model.dart';
+part of 'offer_item_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-CloseBuyItemModel _$CloseBuyItemModelFromJson(Map<String, dynamic> json) {
-  return _CloseBuyItemModel.fromJson(json);
+OfferItemModel _$OfferItemModelFromJson(Map<String, dynamic> json) {
+  return _OfferItemModel.fromJson(json);
 }
 
 /// @nodoc
-class _$CloseBuyItemModelTearOff {
-  const _$CloseBuyItemModelTearOff();
+class _$OfferItemModelTearOff {
+  const _$OfferItemModelTearOff();
 
 // ignore: unused_element
-  _CloseBuyItemModel call(
-      {List<CloseBuyModel> closeBuyModel,
+  _OfferItemModel call(
+      {List<OfferModel> offerModel,
       double amount,
       String exchangeCurrency,
       int buyTotal,
@@ -26,8 +26,8 @@ class _$CloseBuyItemModelTearOff {
       String avatarUrl,
       String buyVia,
       String currency}) {
-    return _CloseBuyItemModel(
-      closeBuyModel: closeBuyModel,
+    return _OfferItemModel(
+      offerModel: offerModel,
       amount: amount,
       exchangeCurrency: exchangeCurrency,
       buyTotal: buyTotal,
@@ -39,18 +39,18 @@ class _$CloseBuyItemModelTearOff {
   }
 
 // ignore: unused_element
-  CloseBuyItemModel fromJson(Map<String, Object> json) {
-    return CloseBuyItemModel.fromJson(json);
+  OfferItemModel fromJson(Map<String, Object> json) {
+    return OfferItemModel.fromJson(json);
   }
 }
 
 /// @nodoc
 // ignore: unused_element
-const $CloseBuyItemModel = _$CloseBuyItemModelTearOff();
+const $OfferItemModel = _$OfferItemModelTearOff();
 
 /// @nodoc
-mixin _$CloseBuyItemModel {
-  List<CloseBuyModel> get closeBuyModel;
+mixin _$OfferItemModel {
+  List<OfferModel> get offerModel;
   double get amount;
   String get exchangeCurrency;
   int get buyTotal;
@@ -61,16 +61,16 @@ mixin _$CloseBuyItemModel {
 
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
-  $CloseBuyItemModelCopyWith<CloseBuyItemModel> get copyWith;
+  $OfferItemModelCopyWith<OfferItemModel> get copyWith;
 }
 
 /// @nodoc
-abstract class $CloseBuyItemModelCopyWith<$Res> {
-  factory $CloseBuyItemModelCopyWith(
-          CloseBuyItemModel value, $Res Function(CloseBuyItemModel) then) =
-      _$CloseBuyItemModelCopyWithImpl<$Res>;
+abstract class $OfferItemModelCopyWith<$Res> {
+  factory $OfferItemModelCopyWith(
+          OfferItemModel value, $Res Function(OfferItemModel) then) =
+      _$OfferItemModelCopyWithImpl<$Res>;
   $Res call(
-      {List<CloseBuyModel> closeBuyModel,
+      {List<OfferModel> offerModel,
       double amount,
       String exchangeCurrency,
       int buyTotal,
@@ -81,17 +81,17 @@ abstract class $CloseBuyItemModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CloseBuyItemModelCopyWithImpl<$Res>
-    implements $CloseBuyItemModelCopyWith<$Res> {
-  _$CloseBuyItemModelCopyWithImpl(this._value, this._then);
+class _$OfferItemModelCopyWithImpl<$Res>
+    implements $OfferItemModelCopyWith<$Res> {
+  _$OfferItemModelCopyWithImpl(this._value, this._then);
 
-  final CloseBuyItemModel _value;
+  final OfferItemModel _value;
   // ignore: unused_field
-  final $Res Function(CloseBuyItemModel) _then;
+  final $Res Function(OfferItemModel) _then;
 
   @override
   $Res call({
-    Object closeBuyModel = freezed,
+    Object offerModel = freezed,
     Object amount = freezed,
     Object exchangeCurrency = freezed,
     Object buyTotal = freezed,
@@ -101,9 +101,9 @@ class _$CloseBuyItemModelCopyWithImpl<$Res>
     Object currency = freezed,
   }) {
     return _then(_value.copyWith(
-      closeBuyModel: closeBuyModel == freezed
-          ? _value.closeBuyModel
-          : closeBuyModel as List<CloseBuyModel>,
+      offerModel: offerModel == freezed
+          ? _value.offerModel
+          : offerModel as List<OfferModel>,
       amount: amount == freezed ? _value.amount : amount as double,
       exchangeCurrency: exchangeCurrency == freezed
           ? _value.exchangeCurrency
@@ -118,14 +118,14 @@ class _$CloseBuyItemModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$CloseBuyItemModelCopyWith<$Res>
-    implements $CloseBuyItemModelCopyWith<$Res> {
-  factory _$CloseBuyItemModelCopyWith(
-          _CloseBuyItemModel value, $Res Function(_CloseBuyItemModel) then) =
-      __$CloseBuyItemModelCopyWithImpl<$Res>;
+abstract class _$OfferItemModelCopyWith<$Res>
+    implements $OfferItemModelCopyWith<$Res> {
+  factory _$OfferItemModelCopyWith(
+          _OfferItemModel value, $Res Function(_OfferItemModel) then) =
+      __$OfferItemModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {List<CloseBuyModel> closeBuyModel,
+      {List<OfferModel> offerModel,
       double amount,
       String exchangeCurrency,
       int buyTotal,
@@ -136,19 +136,19 @@ abstract class _$CloseBuyItemModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$CloseBuyItemModelCopyWithImpl<$Res>
-    extends _$CloseBuyItemModelCopyWithImpl<$Res>
-    implements _$CloseBuyItemModelCopyWith<$Res> {
-  __$CloseBuyItemModelCopyWithImpl(
-      _CloseBuyItemModel _value, $Res Function(_CloseBuyItemModel) _then)
-      : super(_value, (v) => _then(v as _CloseBuyItemModel));
+class __$OfferItemModelCopyWithImpl<$Res>
+    extends _$OfferItemModelCopyWithImpl<$Res>
+    implements _$OfferItemModelCopyWith<$Res> {
+  __$OfferItemModelCopyWithImpl(
+      _OfferItemModel _value, $Res Function(_OfferItemModel) _then)
+      : super(_value, (v) => _then(v as _OfferItemModel));
 
   @override
-  _CloseBuyItemModel get _value => super._value as _CloseBuyItemModel;
+  _OfferItemModel get _value => super._value as _OfferItemModel;
 
   @override
   $Res call({
-    Object closeBuyModel = freezed,
+    Object offerModel = freezed,
     Object amount = freezed,
     Object exchangeCurrency = freezed,
     Object buyTotal = freezed,
@@ -157,10 +157,10 @@ class __$CloseBuyItemModelCopyWithImpl<$Res>
     Object buyVia = freezed,
     Object currency = freezed,
   }) {
-    return _then(_CloseBuyItemModel(
-      closeBuyModel: closeBuyModel == freezed
-          ? _value.closeBuyModel
-          : closeBuyModel as List<CloseBuyModel>,
+    return _then(_OfferItemModel(
+      offerModel: offerModel == freezed
+          ? _value.offerModel
+          : offerModel as List<OfferModel>,
       amount: amount == freezed ? _value.amount : amount as double,
       exchangeCurrency: exchangeCurrency == freezed
           ? _value.exchangeCurrency
@@ -177,9 +177,9 @@ class __$CloseBuyItemModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_CloseBuyItemModel implements _CloseBuyItemModel {
-  const _$_CloseBuyItemModel(
-      {this.closeBuyModel,
+class _$_OfferItemModel implements _OfferItemModel {
+  const _$_OfferItemModel(
+      {this.offerModel,
       this.amount,
       this.exchangeCurrency,
       this.buyTotal,
@@ -188,11 +188,11 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
       this.buyVia,
       this.currency});
 
-  factory _$_CloseBuyItemModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_CloseBuyItemModelFromJson(json);
+  factory _$_OfferItemModel.fromJson(Map<String, dynamic> json) =>
+      _$_$_OfferItemModelFromJson(json);
 
   @override
-  final List<CloseBuyModel> closeBuyModel;
+  final List<OfferModel> offerModel;
   @override
   final double amount;
   @override
@@ -210,16 +210,16 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
 
   @override
   String toString() {
-    return 'CloseBuyItemModel(closeBuyModel: $closeBuyModel, amount: $amount, exchangeCurrency: $exchangeCurrency, buyTotal: $buyTotal, name: $name, avatarUrl: $avatarUrl, buyVia: $buyVia, currency: $currency)';
+    return 'OfferItemModel(offerModel: $offerModel, amount: $amount, exchangeCurrency: $exchangeCurrency, buyTotal: $buyTotal, name: $name, avatarUrl: $avatarUrl, buyVia: $buyVia, currency: $currency)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _CloseBuyItemModel &&
-            (identical(other.closeBuyModel, closeBuyModel) ||
+        (other is _OfferItemModel &&
+            (identical(other.offerModel, offerModel) ||
                 const DeepCollectionEquality()
-                    .equals(other.closeBuyModel, closeBuyModel)) &&
+                    .equals(other.offerModel, offerModel)) &&
             (identical(other.amount, amount) ||
                 const DeepCollectionEquality().equals(other.amount, amount)) &&
             (identical(other.exchangeCurrency, exchangeCurrency) ||
@@ -243,7 +243,7 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(closeBuyModel) ^
+      const DeepCollectionEquality().hash(offerModel) ^
       const DeepCollectionEquality().hash(amount) ^
       const DeepCollectionEquality().hash(exchangeCurrency) ^
       const DeepCollectionEquality().hash(buyTotal) ^
@@ -254,31 +254,31 @@ class _$_CloseBuyItemModel implements _CloseBuyItemModel {
 
   @JsonKey(ignore: true)
   @override
-  _$CloseBuyItemModelCopyWith<_CloseBuyItemModel> get copyWith =>
-      __$CloseBuyItemModelCopyWithImpl<_CloseBuyItemModel>(this, _$identity);
+  _$OfferItemModelCopyWith<_OfferItemModel> get copyWith =>
+      __$OfferItemModelCopyWithImpl<_OfferItemModel>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CloseBuyItemModelToJson(this);
+    return _$_$_OfferItemModelToJson(this);
   }
 }
 
-abstract class _CloseBuyItemModel implements CloseBuyItemModel {
-  const factory _CloseBuyItemModel(
-      {List<CloseBuyModel> closeBuyModel,
+abstract class _OfferItemModel implements OfferItemModel {
+  const factory _OfferItemModel(
+      {List<OfferModel> offerModel,
       double amount,
       String exchangeCurrency,
       int buyTotal,
       String name,
       String avatarUrl,
       String buyVia,
-      String currency}) = _$_CloseBuyItemModel;
+      String currency}) = _$_OfferItemModel;
 
-  factory _CloseBuyItemModel.fromJson(Map<String, dynamic> json) =
-      _$_CloseBuyItemModel.fromJson;
+  factory _OfferItemModel.fromJson(Map<String, dynamic> json) =
+      _$_OfferItemModel.fromJson;
 
   @override
-  List<CloseBuyModel> get closeBuyModel;
+  List<OfferModel> get offerModel;
   @override
   double get amount;
   @override
@@ -295,5 +295,5 @@ abstract class _CloseBuyItemModel implements CloseBuyItemModel {
   String get currency;
   @override
   @JsonKey(ignore: true)
-  _$CloseBuyItemModelCopyWith<_CloseBuyItemModel> get copyWith;
+  _$OfferItemModelCopyWith<_OfferItemModel> get copyWith;
 }

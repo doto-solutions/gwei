@@ -29,18 +29,19 @@ class HomeView extends GetView<HomeController> {
             builder: (_c) => TextButton(
               child: Text('click to fetch'),
               onPressed: () {
-                c.getCloseBuys();
+                c.getOffers();
               },
             ),
           ),
           Obx(() => Column(children: [
-                if (controller.closeBuysList.value != null)
-                  ...controller.closeBuysList.value
-                          .map((item) => ExpansionTile(title: Text('title')))
-                          .toList() ??
-                      []
+                if (controller.offersList.value != null)
+                  ...controller.offersList.value
+                      .map((item) => ExpansionTile(
+                            title: Text('title'),
+                            trailing: Text('a'),
+                          ))
+                      .toList()
               ]))
-          // ),
         ]));
   }
 }

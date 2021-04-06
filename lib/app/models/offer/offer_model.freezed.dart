@@ -1,29 +1,29 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
-part of 'close_buy_model.dart';
+part of 'offer_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-CloseBuyModel _$CloseBuyModelFromJson(Map<String, dynamic> json) {
-  return _CloseBuyModel.fromJson(json);
+OfferModel _$OfferModelFromJson(Map<String, dynamic> json) {
+  return _OfferModel.fromJson(json);
 }
 
 /// @nodoc
-class _$CloseBuyModelTearOff {
-  const _$CloseBuyModelTearOff();
+class _$OfferModelTearOff {
+  const _$OfferModelTearOff();
 
 // ignore: unused_element
-  _CloseBuyModel call(
+  _OfferModel call(
       {bool canBuy,
       double amount,
       String currency,
       String onWhich,
       String buyVia}) {
-    return _CloseBuyModel(
+    return _OfferModel(
       canBuy: canBuy,
       amount: amount,
       currency: currency,
@@ -33,17 +33,17 @@ class _$CloseBuyModelTearOff {
   }
 
 // ignore: unused_element
-  CloseBuyModel fromJson(Map<String, Object> json) {
-    return CloseBuyModel.fromJson(json);
+  OfferModel fromJson(Map<String, Object> json) {
+    return OfferModel.fromJson(json);
   }
 }
 
 /// @nodoc
 // ignore: unused_element
-const $CloseBuyModel = _$CloseBuyModelTearOff();
+const $OfferModel = _$OfferModelTearOff();
 
 /// @nodoc
-mixin _$CloseBuyModel {
+mixin _$OfferModel {
   bool get canBuy;
   double get amount;
   String get currency;
@@ -52,14 +52,14 @@ mixin _$CloseBuyModel {
 
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
-  $CloseBuyModelCopyWith<CloseBuyModel> get copyWith;
+  $OfferModelCopyWith<OfferModel> get copyWith;
 }
 
 /// @nodoc
-abstract class $CloseBuyModelCopyWith<$Res> {
-  factory $CloseBuyModelCopyWith(
-          CloseBuyModel value, $Res Function(CloseBuyModel) then) =
-      _$CloseBuyModelCopyWithImpl<$Res>;
+abstract class $OfferModelCopyWith<$Res> {
+  factory $OfferModelCopyWith(
+          OfferModel value, $Res Function(OfferModel) then) =
+      _$OfferModelCopyWithImpl<$Res>;
   $Res call(
       {bool canBuy,
       double amount,
@@ -69,13 +69,12 @@ abstract class $CloseBuyModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CloseBuyModelCopyWithImpl<$Res>
-    implements $CloseBuyModelCopyWith<$Res> {
-  _$CloseBuyModelCopyWithImpl(this._value, this._then);
+class _$OfferModelCopyWithImpl<$Res> implements $OfferModelCopyWith<$Res> {
+  _$OfferModelCopyWithImpl(this._value, this._then);
 
-  final CloseBuyModel _value;
+  final OfferModel _value;
   // ignore: unused_field
-  final $Res Function(CloseBuyModel) _then;
+  final $Res Function(OfferModel) _then;
 
   @override
   $Res call({
@@ -96,11 +95,10 @@ class _$CloseBuyModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$CloseBuyModelCopyWith<$Res>
-    implements $CloseBuyModelCopyWith<$Res> {
-  factory _$CloseBuyModelCopyWith(
-          _CloseBuyModel value, $Res Function(_CloseBuyModel) then) =
-      __$CloseBuyModelCopyWithImpl<$Res>;
+abstract class _$OfferModelCopyWith<$Res> implements $OfferModelCopyWith<$Res> {
+  factory _$OfferModelCopyWith(
+          _OfferModel value, $Res Function(_OfferModel) then) =
+      __$OfferModelCopyWithImpl<$Res>;
   @override
   $Res call(
       {bool canBuy,
@@ -111,15 +109,14 @@ abstract class _$CloseBuyModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$CloseBuyModelCopyWithImpl<$Res>
-    extends _$CloseBuyModelCopyWithImpl<$Res>
-    implements _$CloseBuyModelCopyWith<$Res> {
-  __$CloseBuyModelCopyWithImpl(
-      _CloseBuyModel _value, $Res Function(_CloseBuyModel) _then)
-      : super(_value, (v) => _then(v as _CloseBuyModel));
+class __$OfferModelCopyWithImpl<$Res> extends _$OfferModelCopyWithImpl<$Res>
+    implements _$OfferModelCopyWith<$Res> {
+  __$OfferModelCopyWithImpl(
+      _OfferModel _value, $Res Function(_OfferModel) _then)
+      : super(_value, (v) => _then(v as _OfferModel));
 
   @override
-  _CloseBuyModel get _value => super._value as _CloseBuyModel;
+  _OfferModel get _value => super._value as _OfferModel;
 
   @override
   $Res call({
@@ -129,7 +126,7 @@ class __$CloseBuyModelCopyWithImpl<$Res>
     Object onWhich = freezed,
     Object buyVia = freezed,
   }) {
-    return _then(_CloseBuyModel(
+    return _then(_OfferModel(
       canBuy: canBuy == freezed ? _value.canBuy : canBuy as bool,
       amount: amount == freezed ? _value.amount : amount as double,
       currency: currency == freezed ? _value.currency : currency as String,
@@ -142,12 +139,12 @@ class __$CloseBuyModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_CloseBuyModel implements _CloseBuyModel {
-  const _$_CloseBuyModel(
+class _$_OfferModel implements _OfferModel {
+  const _$_OfferModel(
       {this.canBuy, this.amount, this.currency, this.onWhich, this.buyVia});
 
-  factory _$_CloseBuyModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_CloseBuyModelFromJson(json);
+  factory _$_OfferModel.fromJson(Map<String, dynamic> json) =>
+      _$_$_OfferModelFromJson(json);
 
   @override
   final bool canBuy;
@@ -162,13 +159,13 @@ class _$_CloseBuyModel implements _CloseBuyModel {
 
   @override
   String toString() {
-    return 'CloseBuyModel(canBuy: $canBuy, amount: $amount, currency: $currency, onWhich: $onWhich, buyVia: $buyVia)';
+    return 'OfferModel(canBuy: $canBuy, amount: $amount, currency: $currency, onWhich: $onWhich, buyVia: $buyVia)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _CloseBuyModel &&
+        (other is _OfferModel &&
             (identical(other.canBuy, canBuy) ||
                 const DeepCollectionEquality().equals(other.canBuy, canBuy)) &&
             (identical(other.amount, amount) ||
@@ -194,25 +191,25 @@ class _$_CloseBuyModel implements _CloseBuyModel {
 
   @JsonKey(ignore: true)
   @override
-  _$CloseBuyModelCopyWith<_CloseBuyModel> get copyWith =>
-      __$CloseBuyModelCopyWithImpl<_CloseBuyModel>(this, _$identity);
+  _$OfferModelCopyWith<_OfferModel> get copyWith =>
+      __$OfferModelCopyWithImpl<_OfferModel>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CloseBuyModelToJson(this);
+    return _$_$_OfferModelToJson(this);
   }
 }
 
-abstract class _CloseBuyModel implements CloseBuyModel {
-  const factory _CloseBuyModel(
+abstract class _OfferModel implements OfferModel {
+  const factory _OfferModel(
       {bool canBuy,
       double amount,
       String currency,
       String onWhich,
-      String buyVia}) = _$_CloseBuyModel;
+      String buyVia}) = _$_OfferModel;
 
-  factory _CloseBuyModel.fromJson(Map<String, dynamic> json) =
-      _$_CloseBuyModel.fromJson;
+  factory _OfferModel.fromJson(Map<String, dynamic> json) =
+      _$_OfferModel.fromJson;
 
   @override
   bool get canBuy;
@@ -226,5 +223,5 @@ abstract class _CloseBuyModel implements CloseBuyModel {
   String get buyVia;
   @override
   @JsonKey(ignore: true)
-  _$CloseBuyModelCopyWith<_CloseBuyModel> get copyWith;
+  _$OfferModelCopyWith<_OfferModel> get copyWith;
 }

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "gwei")
-set(APPLICATION_ID "io.gwei.gwei")
+set(APPLICATION_ID "cz.gwei.gwei_p2p")
 
 cmake_policy(SET CMP0063 NEW)
 

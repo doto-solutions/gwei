@@ -7,26 +7,26 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gwei/app/domain/index.dart';
 import 'package:gwei/app/models/index.dart';
 
-class CloseBuyRepository implements EntityRepository {
+class OfferRepository implements EntityRepository {
   FirebaseFirestore firestore = Get.find<FirebaseFirestore>();
   @override
-  Future<Either<EntityFailure, CloseBuyModel>> getItem(
+  Future<Either<EntityFailure, OfferModel>> getItem(
       {EntityParamsModel cursor}) {
-    var closeBuys = firestore.collection('closeBuys').doc(cursor.beforeCursor);
-    closeBuys.get();
+    var Offers = firestore.collection('Offers').doc(cursor.beforeCursor);
+    Offers.get();
   }
 
   @override
-  Future<Either<EntityFailure, List<CloseBuyItemModel>>> getItems(
+  Future<Either<EntityFailure, List<OfferItemModel>>> getItems(
       {EntityParamsModel cursor, DocumentSnapshot lastDocument}) async {
-    var query = firestore.collection('closeBuys').orderBy('createdAt')
-        // .limit(cursor.offset ?? 10)
-        ;
+    var query = await firestore
+        .collection('offers')
+        .orderBy('createdAt')
+        .limit(cursor.offset ?? 10)
+        .get();
 
-    var collection = await query.get();
-    var items = collection.docs
-        .map((q) =>
-            q.data() != null ? CloseBuyItemModel.fromJson(q.data()) : null)
+    var items = query.docs
+        .map((q) => q.data() != null ? OfferItemModel.fromJson(q.data()) : null)
         // .where((i) => i != null)
         .toList();
     return right(items);
@@ -50,13 +50,13 @@ class CloseBuyRepository implements EntityRepository {
             sink.add(left(EntityFailure.notFound())));
   }
 
-  CloseBuyModel documentToEntity(DocumentSnapshot doc) {
+  OfferModel documentToEntity(DocumentSnapshot doc) {
     final snapshot = resolveSnapshot(doc);
-    return CloseBuyModel.fromJson(snapshot);
+    return OfferModel.fromJson(snapshot);
   }
 
-  CloseBuyItemModel documentToEntityItem(QueryDocumentSnapshot doc) {
+  OfferItemModel documentToEntityItem(QueryDocumentSnapshot doc) {
     final snapshot = resolveSnapshot(doc);
-    return CloseBuyItemModel.fromJson(snapshot);
+    return OfferItemModel.fromJson(snapshot);
   }
 }

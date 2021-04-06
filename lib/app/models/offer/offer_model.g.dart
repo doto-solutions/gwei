@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'close_buy_model.dart';
+part of 'offer_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CloseBuyModel _$_$_CloseBuyModelFromJson(Map<String, dynamic> json) {
-  return _$_CloseBuyModel(
+_$_OfferModel _$_$_OfferModelFromJson(Map<String, dynamic> json) {
+  return _$_OfferModel(
     canBuy: json['canBuy'] as bool,
     amount: (json['amount'] as num)?.toDouble(),
     currency: json['currency'] as String,
@@ -16,7 +16,7 @@ _$_CloseBuyModel _$_$_CloseBuyModelFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_CloseBuyModelToJson(_$_CloseBuyModel instance) =>
+Map<String, dynamic> _$_$_OfferModelToJson(_$_OfferModel instance) =>
     <String, dynamic>{
       'canBuy': instance.canBuy,
       'amount': instance.amount,
